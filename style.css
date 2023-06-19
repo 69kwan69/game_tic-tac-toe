@@ -57,3 +57,30 @@ a {
 #__next {
     isolation: isolate;
 }
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+table {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+table * {
+    border: 1px solid;
+}
+
+td {
+    text-align: center;
+
+    font-size: 1.5rem;
+
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
