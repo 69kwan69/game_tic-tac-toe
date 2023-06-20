@@ -5,30 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game: Tic Tac Toe</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/reset.css">
     <script src="ticTacToe.js" defer></script>
+    <script src="https://kit.fontawesome.com/1e67b47405.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <h1>Tic Tac Toe</h1>
 
-    <table class="board">
-        <tr>
-            <td data-position="0">&nbsp;</td>
-            <td data-position="1">&nbsp;</td>
-            <td data-position="2">&nbsp;</td>
-        </tr>
-        <tr>
-            <td data-position="3">&nbsp;</td>
-            <td data-position="4">&nbsp;</td>
-            <td data-position="5">&nbsp;</td>
-        </tr>
-        <tr>
-            <td data-position="6">&nbsp;</td>
-            <td data-position="7">&nbsp;</td>
-            <td data-position="8">&nbsp;</td>
-        </tr>
-    </table>
+    <div class="grid">
+
+        <div class="board-wrapper">
+            <table class="board">
+                <tr>
+                    <td data-position="0">&nbsp;</td>
+                    <td data-position="1">&nbsp;</td>
+                    <td data-position="2">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td data-position="3">&nbsp;</td>
+                    <td data-position="4">&nbsp;</td>
+                    <td data-position="5">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td data-position="6">&nbsp;</td>
+                    <td data-position="7">&nbsp;</td>
+                    <td data-position="8">&nbsp;</td>
+                </tr>
+            </table>
+
+            <dialog>
+                <p class="message">Player 1 win!</p>
+                <button class="rematch">Rematch</button>
+            </dialog>
+        </div>
+
+        <div class="player p1">
+            <select name="player1">
+                <option value="Player 1">Player 1</option>
+                <option value="Bot 1">Bot 1</option>
+            </select>
+            <p>Score: <span class="score">0</span></p>
+        </div>
+
+        <div class="player p2">
+            <select name="player2">
+                <option value="Player 2">Player 2</option>
+                <option value="Bot 2">Bot 2</option>
+            </select>
+            <p>Score: <span class="score">0</span></p>
+        </div>
+    </div>
 </body>
 
 </html>
